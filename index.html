@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <div class="game-container">
+        <h1>Tic-Tac-Toe</h1>
+        <p class="creator">Created by: <span class="creator-name">Anuj Kumar</span></p> <!-- Your name here -->
+
+        <!-- Mode and Difficulty Selection -->
+        <div class="options">
+            <label for="mode">Game Mode:</label>
+            <select id="mode">
+                <option value="1player">1 Player (vs Computer)</option>
+                <option value="2player">2 Player</option>
+            </select>
+
+            <label for="difficulty">Difficulty:</label>
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="normal">Normal</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+
+        <div class="game-board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        <div class="status">
+            <p>Player X's turn</p>
+            <button class="restart-btn">Restart Game</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
